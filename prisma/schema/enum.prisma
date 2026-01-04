@@ -1,0 +1,43 @@
+enum UserRole {
+    ADMIN
+    USER
+    HOST
+}
+
+enum UserStatus {
+    ACTIVE
+    INACTIVE
+    BLOCKED
+    DELETED
+}
+
+enum Gender {
+    MALE
+    FEMALE
+    OTHER
+}
+
+enum EventStatus {
+    OPEN
+    FULL
+    UPCOMING
+    ONGOING
+    COMPLETED
+    CANCELLED
+    CLOSED
+    PENDING
+}
+
+enum PaymentStatus {
+    PENDING
+    COMPLETED
+    FAILED
+    REFUNDED
+}
+enum paymentMethod {
+    CREDIT_CARD
+    DEBIT_CARD
+    STRIPE
+    BANK_TRANSFER
+    CASH
+}
