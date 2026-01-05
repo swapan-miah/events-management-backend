@@ -15,19 +15,7 @@ app.use(pinoHttp({ logger }));
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      const allowedOrigins = [
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "https://event-hub-management.vercel.app",
-      ];
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
+    origin: true,
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   })
